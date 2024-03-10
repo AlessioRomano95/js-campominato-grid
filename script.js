@@ -29,16 +29,18 @@ const createCells = content => {
 
 // 5.
 button.addEventListener('click', function(){
-    for (let i = 1; i <= totCells; i++){
-        const newCells = createCells(i)
-        
-        // 7.
-        newCells.addEventListener('click', () => {
-            newCells.classList.toggle('clicca')
-            console.log(newCells)
-        })
+  grid.innerHTML = '';
 
-        // 8.
-        grid.appendChild(newCells)
-    }
-})
+  // Crea e aggiunge le nuove celle alla griglia
+  for (let i = 1; i <= totCells; i++){
+      const newCells = createCells(i);
+      
+      newCells.addEventListener('click', () => {
+          newCells.classList.toggle('clicca');
+          console.log(newCells);
+      });
+
+      // 8.
+      grid.appendChild(newCells);
+  }
+});

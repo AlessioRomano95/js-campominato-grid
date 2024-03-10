@@ -41,3 +41,27 @@ padding: 0px 20px;
   box-shadow: 0px 0px 20px #000000;
   margin-top: 80px;
 }
+
+#grid .cells{
+  width: calc(100% / 10);
+  height: calc(100% / 10);
+  border: 1px solid black;
+  color: black;
+  font-size: 1.5rem;
+  background-color: #606060;
+  box-shadow: 0px 0px 20px #000000;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#grid .cells.clicca {
+  background-color: rgb(176, 176, 0); 
+}
+
+
+.clicca{
+  opacity: 50%;    
+}
